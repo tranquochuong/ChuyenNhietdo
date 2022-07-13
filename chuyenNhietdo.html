@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table>
+        <tr>
+            <th><label for="Amount">Amount</label></th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="number" id="Amount" placeholder="nhập số độ"></td>
+            <td>
+                <select id="From">
+                    <option value="C">Độ C</option>
+                </select>
+            </td>
+            <td>
+                <select id="To">
+                    <option  value="F">Độ F</option>
+                </select>
+            </td>
+            <td><button onclick="ChangeNhietdo()">Chuyển</button></td>
+        </tr>            
+    </table>
+    <br>
+    <p id="Result">Nhiệt độ F là</p>
+<script>
+    function ChangeNhietdo()
+    {
+        let a = document.getElementById("Amount").value;
+        let Result= (a*9)/5 +32;
+        document.getElementById("Result").innerHTML = Result + " Nhiệt độ F là";
+    }
+</script>
+
+</body>
+</html>
+</body>
+</html
